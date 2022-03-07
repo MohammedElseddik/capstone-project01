@@ -15,6 +15,12 @@
   --border-radius: 30px; */
 }
 
+/* display: none items */
+
+.hidden {
+  display: none;
+}
+
 /* Typography */
 
 html {
@@ -160,12 +166,11 @@ a {
 }
 
 .nav {
-  background-color: yellowgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
-  flex-wrap: wrap;
+  position: absolute;
 }
 
 .nav__list {
@@ -244,6 +249,10 @@ a {
     padding: 2rem 20rem;
   }
 
+  .brand-icon {
+    display: inline-block;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -271,7 +280,7 @@ a {
   background-image: url(/img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6rem 2rem;
+  padding: 15rem 2rem;
 }
 
 .block__heading {
