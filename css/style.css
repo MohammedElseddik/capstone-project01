@@ -1,0 +1,311 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #272a31;
+  --color-secondary: #ec5242;
+  --color-accent: #d3d3d3;
+  --color-heading: #141414;
+  --color-body-text: #575757;
+  --font-familly-cocogoose:'cocogoose', sans-serif;
+  /* --color-border: #ccc;
+  --border-radius: 30px; */
+}
+
+/* Typography */
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-body-text);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+  font-family: var(--font-familly-cocogoose);
+}
+
+h1 {
+  font-size: 4.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* list */
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+  padding-left: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.active-item {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .list--tick .list__item {
+    margin-left: 0;
+  }
+
+  .active-item {
+    border: 6px solid var(--color-secondary);
+    padding: 1.5rem 1.7rem !important; 
+  }
+}
+
+/* Icons */
+
+.icon {
+  width: 90px;
+  height: 70px;
+}
+
+.icon-primary {
+  fill: var(--color-accent);
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 2.2rem 4rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.btn--primary:hover {
+  background-color: #fd1d04;
+  color: #fff;
+}
+
+.btn-block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+/* Navigation Bar */
+
+.header-nav {
+  display: none;
+}
+
+.nav {
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item > a {
+  color: var(--color-primary);
+  transition: color 0.4s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-secondary);
+}
+
+.nav__toggler {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggler-bar {
+  display: inline-block;
+  width: 45px;
+  height: 6px;
+  background-color: var(--color-body-text);
+  margin: 6px;
+}
+
+.collapsible {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.collapsible__content {
+  display: none;
+}
+
+.collapsible--expanded .collapsible__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem ;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-body-text);
+  }
+  
+  .header-nav__list {
+    padding: 0 18rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .header-nav__item {
+    padding: 0 2rem;
+  }
+
+  .header-nav__item > a {
+    font-weight: 600;
+    color: var(--color-accent);
+  } 
+
+  .fa-facebook-f {
+    display: inline;
+  }
+
+  .nav {
+    position: relative;
+    padding: 2rem 20rem;
+  }
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+  }
+
+  .nav__item {
+    padding: 0 3.5rem;
+  }
+}
+
+/* blocks */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  padding: 6rem 2rem;
+  background: var(--color-accent);
+}
+
+.block__heading {
+  margin-top: 0;
+  color: var(--color-secondary);
+}
+
+.hero__title {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero__description {
+  color: var(--color-body-text);
+  border: 2px solid #fff;
+  padding: 2rem;
+}
+
+.hero__date {
+  color: var(--color-heading);
+  font-family: var(--font-familly-cocogoose);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    height: 100vh;
+    padding: 10rem 0;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 2.3rem;
+  }
+}
