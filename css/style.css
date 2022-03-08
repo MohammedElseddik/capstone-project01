@@ -31,15 +31,18 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 2.2rem;
   color: var(--color-body-text);
-  line-height: 1.5;
   scroll-behavior: smooth;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 h1,
 h2,
 h3 {
   color: var(--color-heading);
-  margin-bottom: 1rem;
+  margin: 0;
   font-family: var(--font-familly-cocogoose);
 }
 
@@ -459,3 +462,64 @@ a {
     line-height: 1.7;
   }
 }
+
+/* Featured Teachers */
+
+.featured-section {
+  /* display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  column-gap: 0;
+  row-gap: 88px;
+  width: 100%; */
+  display: flex;
+}
+
+.speaker-container {
+  display: flex;
+  gap: 1em;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.speaker-container__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0 0 2rem;
+  background-image: url(/img/checkerboard-squares-black-white.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.speaker-container__img img {
+  width: 160px;
+  height: 160px;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.speaker__info {
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+}
+
+.gray-line {
+  width: 30px;
+  height: 5px;
+  background-color: var(--color-body-text);
+}
+
+.speaker__description {
+  flex: 1;
+  font-size: 1.3rem;
+}
+
