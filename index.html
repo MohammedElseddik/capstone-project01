@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -54,43 +54,88 @@
       </nav>
     </header>
 
-    <section class="hero block hero__background">
-      <div class="container">
-        <span class="hero__title"
-          >"Hello Job seekers Land your Remote Job"</span
-        >
-        <h1 class="block__heading">
-          JOIN OUR CREATIVE COMMONS GLOBAL SUMMIY 2015
-        </h1>
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut
-          repudiandae sunt quas eius corrupti voluptate minima nostrum iusto.
-          Quas ad laboriosam aperiam fugiat et voluptate commodi velit delectus
-          tempore.
-        </p>
-        <h2 class="hero__date">2022-09-15(WED) ~ 2022-09-17(SAT)</h2>
-      </div>
+    <section class="hero-block">
+      <span class="hero__title">"Hello Job seekers Land your Remote Job"</span>
+      <h1 class="hero__heading">
+        JOIN OUR CREATIVE COMMONS GLOBAL SUMMIY 2015
+      </h1>
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut
+        repudiandae sunt quas eius corrupti voluptate minima nostrum iusto.
+      </p>
+      <h2 class="hero__date">2022-09-15(WED) ~ 2022-09-17(SAT)</h2>
     </section>
 
-    <section class="main-program block">
-      <div class="card container">
-        <header class="card__header">
+    <section class="main-program">
+      <div class="main-program__header">
+        <h2 class="main-program__title">Main Program</h2>
+        <div class="red-line"></div>
+      </div>
+
+      <div class="cards-container">
+        <div class="card card--primar">
           <span>
             <svg class="icon icon-primary">
               <use xlink:href="./img/sprite.svg#conference-education"></use>
             </svg>
           </span>
-          <h3 class="sub-progran__name">Program</h3>
-        </header>
-        <div class="card__body">
+          <h3 class="sub-progran__name">Lecture</h3>
           <p class="sub-progran__description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            eum, dolores ducimus, id veniam minima expedita obcaecati nesciunt
-            aperiam tempora ipsam at neque voluptates ullam odio. Eaque dolorem
-            reiciendis minima!
+            Our experts will help you understand what is required to become an
+            online remote worker or employee.
+          </p>
+        </div>
+        <div class="card card--primar">
+          <span>
+            <svg class="icon icon-primary">
+              <use xlink:href="./img/sprite.svg#conference-education"></use>
+            </svg>
+          </span>
+          <h3 class="sub-progran__name">Workshop</h3>
+          <p class="sub-progran__description">
+            This is free workshop is a step by step guide to help land a remote
+            job. and also we provide future developemts.
+          </p>
+        </div>
+        <div class="card card--primar">
+          <span>
+            <svg class="icon icon-primary">
+              <use xlink:href="./img/sprite.svg#forum"></use>
+            </svg>
+          </span>
+          <h3 class="sub-progran__name">Forum</h3>
+          <p class="sub-progran__description">
+            Have the time to share your thoughts and opinions with experts for
+            each topic.
+          </p>
+        </div>
+        <div class="card card--primar">
+          <span>
+            <svg class="icon icon-primary">
+              <use xlink:href="./img/sprite.svg#increasing-users"></use>
+            </svg>
+          </span>
+          <h3 class="sub-progran__name">Our clients</h3>
+          <p class="sub-progran__description">
+            Our previous clients are building careers at some of the top
+            companies in tech in the world.
+          </p>
+        </div>
+        <div class="card card--primar">
+          <span>
+            <svg class="icon icon-primary">
+              <use xlink:href="./img/sprite.svg#conference-education"></use>
+            </svg>
+          </span>
+          <h3 class="sub-progran__name">Networing</h3>
+          <p class="sub-progran__description">
+            Make connections and build relationships.with our experts they will
+            help you make best career decisions.
           </p>
         </div>
       </div>
+      <a href="#" class="btn btn-text">SEE THE WHOLE PROGRAM</a>
+      <button class="btn btn--primary btn-block">Join the the course</button>
     </section>
     <script src="main.js"></script>
   </body>
