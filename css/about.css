@@ -77,10 +77,16 @@
 }
 
 .logo-heading {
-  font-family: "Lato", "sans-serif";
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   margin: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    gap: 3rem;
+  }
 }
 
 .clients {
