@@ -2,7 +2,7 @@
 /* Hero */
 
 .hero-block {
-  background-image: url(/img/header.png);
+  background-image: url(../img/header.png);
   background-repeat: no-repeat;
   padding: 15rem 2rem 8rem 2rem;
   width: 100%;
