@@ -588,7 +588,7 @@ a {
 
 .partner-section__list-item {
   font-size: 2.5rem;
-  padding-right: 4rem;
+  padding-right: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {  
