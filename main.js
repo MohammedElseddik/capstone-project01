@@ -22,6 +22,11 @@ function opneMenu() {
   navList.classList.toggle("mobile-menu");
 }
 
+["click", "keypress"].forEach((event) => {
+  navToggle.addEventListener(event, opneMenu);
+});
+    
+
 const projectObjects = [
   {
     name: "Leilani Montoya",
@@ -131,6 +136,3 @@ function createFeatureElements() {
 }
 createFeatureElements();
 
-["click", "keypress"].forEach((event) => {
-  navToggle.addEventListener(event, opneMenu);
-});
