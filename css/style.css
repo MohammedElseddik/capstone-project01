@@ -610,3 +610,48 @@ a {
     padding-right: 4rem;
   }
 }
+
+/* footer */
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3rem;
+  gap: 2rem;
+}
+
+.footer-log {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-log > p {
+  width: 60%;
+  font-family: var(--font-familly-cocogoose);
+  color: var(--color-heading);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.reserved-rights {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {  
+
+  .footer-section {
+    padding: 7rem 0;
+    justify-content: center;
+  }
+
+  .footer-log > p {
+    font-size: 2rem;
+  }
+
+  .reserved-rights {
+    font-size: 2.2rem;
+  }
+}
