@@ -24,6 +24,8 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 2.2rem;
   scroll-behavior: smooth;
+  letter-spacing: 0.2px;
+  margin: 0;
 }
 
 h1,
@@ -81,7 +83,6 @@ a {
   align-items: center;
   color: var(--color-primary);
   display: flex;
-  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   list-style: none;
@@ -141,7 +142,7 @@ a {
   font-size: 2.5rem;
   font-weight: 500;
   margin: 1rem 0;
-  padding: 2.2rem 4rem;
+  padding: 2.2rem 2rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -158,7 +159,7 @@ a {
 }
 
 .btn-block {
-  width: 90%;
+  width: 70%;
 }
 
 .btn-text {
@@ -166,10 +167,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .btn {
-    font-size: 2rem;
-  }
-
+ 
   .btn-block {
     display: none;
   }
@@ -178,7 +176,6 @@ a {
     border-bottom: 2px solid var(--color-accent);
     color: var(--color-accent);
     display: inline;
-    font-size: 2.2rem;
     font-weight: 600;
     padding: 0;
   }
@@ -288,10 +285,9 @@ a {
 
   .header-nav__list {
     margin: 0;
-    padding: 1.5rem 18rem;
+    padding: 1.5rem 16rem;
     display: flex;
     justify-content: flex-end;
-    min-width: 983px;
   }
 
   .header-nav__item {
@@ -310,7 +306,7 @@ a {
   .nav {
     background-color: #f5f5f5;
     position: relative;
-    padding: 1rem 20rem;
+    padding: 1rem 16rem;
     box-shadow: 0 5px 10px -10px rgb(180, 179, 179);
   }
 
@@ -398,6 +394,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 4rem 2rem;
+  width: 100%;
 }
 
 .partner-section__header {
@@ -408,12 +405,6 @@ a {
   gap: 2rem;
 }
 
-.partner-section__title {
-  font-family: "Lato", sans-serif;
-  color: var(--color-accent);
-  font-size: 2.8rem;
-}
-
 .partner-section__body {
   align-items: center;
   display: flex;
@@ -421,11 +412,17 @@ a {
   justify-content: center;
 }
 
+.partner-section__title {
+  font-family: "Lato", sans-serif;
+  color: var(--color-accent);
+  font-size: 2.1rem;
+}
+
 .partner-section__list {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   list-style: none;
   padding: 0;
@@ -433,7 +430,7 @@ a {
 }
 
 .partner-section__list-item {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-right: 0.5rem;
 }
 
@@ -447,11 +444,12 @@ a {
   }
 
   .partner-section__title {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    color: var(--color-body-text);
   }
 
   .partner-section__list-item {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-right: 4rem;
   }
 }

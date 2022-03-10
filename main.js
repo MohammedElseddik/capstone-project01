@@ -29,61 +29,61 @@ const projectObjects = [
   {
     name: 'Leilani Montoya',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Leilani Montoya is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS',
     ],
     image: ['./img/generated_photos_5f896fca5bec830008385831.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'With nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
     name: 'Levi Barron',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Levi Barron Master of HR, BBA instructor at USJ, HR Consultant',
     ],
     image: ['./img/generated_photos_5e6801c56d3b380006d3cf13.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'With nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
     name: 'Lia Crane',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Lia creane is the Career Development Manager for the career coaching program',
     ],
     image: ['./img/generated_photos_5e680e326d3b380006d6a253.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
     name: 'Alfred Donaldson',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Alfred Donaldson is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS',
     ],
     image: ['./img/generated_photos_5e6810cb6d3b380006d73d63.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
     name: 'Javion Hobbs',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Javion Hobbs is the Career Development Manager at REMOTE EXPERTS',
     ],
     image: ['./img/generated_photos_5e68588e6d3b380006e72197.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
     name: 'Kelvin Calderon',
     speakerInfo: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates',
+      'Kelvin Calderon is the Career Development Manager at REMOTE EXPERTS',
     ],
     image: ['./img/generated_photos_5f1804011f67b0000678ae42.jpg'],
     description: [
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptates',
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
 ];
@@ -109,7 +109,7 @@ const featuredElements = [...document.querySelectorAll('.featured-element')];
 
 function createFeatureElements() {
   featuredElements[0].innerHTML = `<div class="featured-section__header">
-  <h2 class="featured-section__title">featured Speakers</h2>
+  <h2 class="featured-section__title">Featured Speakers</h2>
   <div class="red-line"></div>
   </div>`;
   for (let i = 0; i < projectObjects.length; i += 1) {
