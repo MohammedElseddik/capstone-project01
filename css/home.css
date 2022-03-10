@@ -185,7 +185,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 0.5rem;
 }
 
 .speaker__info {
@@ -196,7 +195,7 @@
 .gray-line {
   width: 30px;
   height: 2px;
-  margin: 0,2rem;
+  margin: 3px;
   background-color: var(--color-accent);
 }
 
