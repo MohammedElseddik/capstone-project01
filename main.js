@@ -101,19 +101,13 @@ function createFeaturedSection() {
   );
   featuredSection.appendChild(featuredSectionHeader);
   featuredSection.appendChild(featuredSectionBoy);
-}
 
-createFeaturedSection();
-
-const featuredElements = [...document.querySelectorAll('.featured-element')];
-
-function createFeatureElements() {
-  featuredElements[0].innerHTML = `<div class="featured-section__header">
+  featuredSectionHeader.innerHTML = `<div class="featured-section__header">
   <h2 class="featured-section__title">Featured Speakers</h2>
   <div class="red-line"></div>
   </div>`;
   for (let i = 0; i < projectObjects.length; i += 1) {
-    featuredElements[1].innerHTML += `<div class="speaker-container">
+    featuredSectionBoy.innerHTML += `<div class="speaker-container">
         <div class="speaker-container__img">
           <img
             src="${projectObjects[i].image[0]}"
@@ -130,6 +124,8 @@ function createFeatureElements() {
         </div>
       </div>`;
   }
-  featuredSection.appendChild(featuredElements);
+  featuredSection.appendChild(featuredSectionHeader);
+  featuredSection.appendChild(featuredSectionBoy);
 }
-createFeatureElements();
+
+createFeaturedSection();
