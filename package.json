@@ -1,28 +1,27 @@
 {
-  "name": "html-css-javascript-capstone-project",
+  "name": "web-development-capstone-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Description of the project: \r     This project represents the mobile version and the Desktop version of the first capstone project from Microverse, Where I used all the skills and knowledge that I acquired form the first module.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MohammedElseddik/HTML-CSS-JavaScript-capstone-project.git"
+    "url": "git+https://github.com/MohammedElseddik/Web-Development-Capstone-Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MohammedElseddik/HTML-CSS-JavaScript-capstone-project/issues"
+    "url": "https://github.com/MohammedElseddik/Web-Development-Capstone-Project/issues"
   },
-  "homepage": "https://github.com/MohammedElseddik/HTML-CSS-JavaScript-capstone-project#readme",
+  "homepage": "https://github.com/MohammedElseddik/Web-Development-Capstone-Project#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
-    "hint": "^6.1.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
