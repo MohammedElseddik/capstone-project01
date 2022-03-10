@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MohammedElseddik/Web-Development-Capstone-Project/issues"
   },
-  "homepage": "https://github.com/MohammedElseddik/Web-Development-Capstone-Project#readme"
+  "homepage": "https://github.com/MohammedElseddik/Web-Development-Capstone-Project#readme",
+  "devDependencies": {
+    "hint": "^6.1.10"
+  }
 }
